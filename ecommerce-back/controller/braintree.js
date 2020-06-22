@@ -2,7 +2,7 @@ const User = require('../models/user');
 const braintree = require('braintree');
 require('dotenv').config();
 
-
+//################## This code is taken from youtube tutoials#####################
 
 const gateway = braintree.connect({
     environment: braintree.Environment.Sandbox, // Production
