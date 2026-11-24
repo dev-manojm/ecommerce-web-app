@@ -4,7 +4,7 @@ require('dotenv').config();
 
 //################## This code is taken from youtube tutoials#####################
 
-const gateway = braintree.connect({
+const gateway = new braintree.BraintreeGateway({
     environment: braintree.Environment.Sandbox, // Production
     merchantId: process.env.BRAINTREE_MERCH_ID,
     publicKey: process.env.BRAINTREE_PUB_KEY,
